@@ -42,13 +42,7 @@ class App extends Component {
 
           <Row>
             <Col md={6} xs={12}>{this.renderChart()}</Col>
-            <br />
-            <br />
-            <br />
-            <br />
-            <br />
-            <br />
-            <br />
+            
 
             <Col md={6} xs={12}><Table data={this.state.data} updateData={this.updateData} activeName={this.state.activeName} /></Col>
           </Row>

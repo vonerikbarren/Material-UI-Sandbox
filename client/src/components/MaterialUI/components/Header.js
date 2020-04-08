@@ -28,6 +28,10 @@ function ElevationScroll(props) {
 const useStyles = makeStyles(theme => ({
   toolbarMargin: {
     ...theme.mixins.toolbar
+  },
+
+  Typography: {
+    color: "lightBlue"
   }
 }))
 
@@ -40,9 +44,9 @@ export default function Header(props) {
         <AppBar position="fixed" color="primary">
           <Toolbar>
 
-            <Typography variant="h3" color="secondary">
-              Yummy Yummy
-          </Typography>
+            <Typography className={classes.Typography} variant="h4" color="secondary">
+              My React Study Corner
+            </Typography>
 
           </Toolbar>
         </AppBar>

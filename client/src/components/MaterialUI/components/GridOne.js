@@ -33,6 +33,18 @@ export default function CenteredGrid() {
     <div >
       <Grid container spacing={3}>
 
+      <Grid item xs={12}>
+          <Paper color='blue' className={classes.paper}> Hello React
+            <div style={{ backgroundColor: "DarkBlue" }} className='jumbotron  text-center text-white'>
+              <h1> Using Things Correctly</h1>
+              <img src={purpleGif} alt='teamwork' />
+
+
+            </div>
+
+          </Paper>
+        </Grid>
+
         <Grid item xs={12}>
           <Paper color='blue' className={classes.paper}> SVG
             <div style={{ backgroundColor: "DarkBlue" }} className='jumbotron  text-center text-white'>
