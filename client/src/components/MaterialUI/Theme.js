@@ -15,6 +15,10 @@ export default createMuiTheme({
     },
     secondary: {
       main: `${arcOrange}`
+    },
+    background: {
+      paper: "white",
+      default: "white"
     }
   },
 
@@ -24,8 +28,6 @@ export default createMuiTheme({
     }
   },
 
-  paper: {
-    color: 'brown'
-  }
+
 
 });
