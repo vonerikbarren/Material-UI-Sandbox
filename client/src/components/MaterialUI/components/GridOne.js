@@ -19,8 +19,8 @@ const useStyles = makeStyles((theme) => ({
   paper: {
     padding: theme.spacing(2),
     textAlign: 'center',
-    color: "brown",
-    backgroundColor: "grey"
+    color: "purple",
+    backgroundColor: "indigo"
 
   },
 
@@ -34,7 +34,7 @@ export default function CenteredGrid() {
       <Grid container spacing={3}>
 
         <Grid item xs={12}>
-          <Paper color='blue' className={classes.paper}> Hello React
+          <Paper color='blue' className={classes.paper}> SVG
             <div style={{ backgroundColor: "DarkBlue" }} className='jumbotron  text-center text-white'>
               <h1> An SVG! </h1>
               <img style={{ height: '600px', width: '600px' }} src={tableSVG} alt='teamwork' />

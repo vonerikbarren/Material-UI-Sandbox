@@ -32,7 +32,7 @@ const useStyles = makeStyles(theme => ({
       easing: theme.transitions.easing.sharp,
       duration: theme.transitions.duration.leavingScreen,
     }),
-    backgroundColor: 'brown',
+    backgroundColor: 'indigo',
     color: 'white'
   },
   appBarShift: {
@@ -53,7 +53,7 @@ const useStyles = makeStyles(theme => ({
     width: drawerWidth,
     flexShrink: 0,
     whiteSpace: 'nowrap',
-    backgroundColor: 'brown'
+    backgroundColor: 'indigo'
   },
   drawerOpen: {
     width: drawerWidth,
@@ -61,14 +61,14 @@ const useStyles = makeStyles(theme => ({
       easing: theme.transitions.easing.sharp,
       duration: theme.transitions.duration.enteringScreen,
     }),
-    backgroundColor: 'brown'
+    backgroundColor: 'indigo'
   },
   drawerClose: {
     transition: theme.transitions.create('width', {
       easing: theme.transitions.easing.sharp,
       duration: theme.transitions.duration.leavingScreen,
     }),
-    backgroundColor: 'brown',
+    backgroundColor: 'indigo',
     overflowX: 'hidden',
     width: theme.spacing(7) + 1,
     [theme.breakpoints.up('sm')]: {
