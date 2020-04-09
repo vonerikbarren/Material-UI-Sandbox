@@ -38,7 +38,7 @@ export default function Home() {
 
               <Grid item xs={4}>
                 <Paper className={mui.paper}>
-                  <h3 className="text-light"> GreysiConsulting LLC</h3>
+                  <h4 className="text-light"> Greysi Financial Consulting LLC</h4>
                 </Paper>
               </Grid>
 
@@ -130,6 +130,55 @@ export default function Home() {
 
                 </Paper>
               </Grid>
+
+            </Grid>
+          </Paper>
+        </Grid>
+      </Grid>
+
+
+      {/*This section is specifically for practicing a layout using cards */}
+      <Grid container spacing={3}>
+        <Grid item xs={12}>
+          <Paper className={mui.paper}>
+            <Grid container spacing={3}>
+
+              <Grid item xs={4}>
+                <Paper elevation={0} className={mui.paper}>
+                  <Card>
+                    <CardContent>
+                      <Typography color="textSecondary">Hello React</Typography>
+
+
+                    </CardContent>
+                  </Card>
+                </Paper>
+              </Grid>
+
+              <Grid item xs={4}>
+                <Paper elevation={0} className={mui.paper}>
+                  <Card>
+                    <CardContent>
+                      <Typography color="textSecondary">Hello React</Typography>
+
+
+                    </CardContent>
+                  </Card>
+                </Paper>
+              </Grid>
+
+              <Grid item xs={4}>
+                <Paper elevation={0} className={mui.paper}>
+                  <Card>
+                    <CardContent>
+                      <Typography color="textSecondary">Hello React</Typography>
+
+
+                    </CardContent>
+                  </Card>
+                </Paper>
+              </Grid>
+
 
             </Grid>
           </Paper>
