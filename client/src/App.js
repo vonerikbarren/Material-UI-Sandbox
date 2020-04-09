@@ -6,6 +6,12 @@ import Home from './View/Home/Home';
 import Register from './View/Register/Register';
 import Login from './View/Login/Login';
 
+import Dashboard from './View/Dashboard/Dashboard';
+
+import ConsultingHome from './View/ConsultingSite/ConsultingHome/ConsultingHome';
+import ConsultingPricing from './View/ConsultingSite/ConsultingPricing/ConsultingPricing';
+import ConsultingServices from './View/ConsultingSite/ConsultingServices/ConsultingServices';
+
 
 // Building a Form (Below)
 // import Form from './components/Class/Form/Form';
@@ -24,6 +30,8 @@ import Header from './components/MaterialUI/components/Header';
 import Drawer1 from './components/MaterialUI/components/Drawer1';
 
 
+
+
 function App() {
   return (
     <ThemeProvider theme={Theme}>
@@ -34,6 +42,13 @@ function App() {
           <Route exact path="/Register" component={Register} />
           <Route exact path="/Login" component={Login} />
           <Route exact path="/Drawer1" component={Drawer1} />
+
+          <Route exact path="/Dashboard" component={Dashboard} />
+
+          <Route exact path="/ConsultingHome" component={ConsultingHome} />
+          <Route exact path="/ConsultingPricing" component={ConsultingPricing} />
+          <Route exact path="/ConsultingServices" component={ConsultingServices} />
+
         </Switch>
       </Router>
     </ThemeProvider>
