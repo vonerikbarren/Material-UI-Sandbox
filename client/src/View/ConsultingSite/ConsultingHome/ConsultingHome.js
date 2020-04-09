@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useRef, useEffect } from 'react';
 import './ConsultingHome.css';
 
 
@@ -10,7 +10,12 @@ import Card from '@material-ui/core/Card';
 import CardActions from '@material-ui/core/CardActions';
 import CardContent from '@material-ui/core/CardContent';
 
+import Background2 from '../../../Assets/Background2.jpg'
+
+
 import ConsultingNavbar from '../ConsultingNavbar/ConsultingNavbar';
+
+import { TweenMax, Power3 } from 'gsap';
 
 
 
@@ -31,6 +36,22 @@ const useStyles = makeStyles((theme) => ({
 
 export default function Home() {
   const mui = useStyles();
+
+  let backgroundItem = useRef(null);
+
+  useEffect(() => {
+    console.log(backgroundItem);
+    TweenMax.from(
+      backgroundItem, 8, {
+      opacity: 0,
+      y: -20,
+      ease: Power3.easeOut
+    }
+
+    )
+  }, [])
+
+
   return (
     <div className="consulting" >
       {/*Navigation Section of Page */}
@@ -38,6 +59,9 @@ export default function Home() {
         <Grid item xs={12}>
           <Paper className={mui.paper}>
             <ConsultingNavbar />
+            <img className="backgroundItem" ref={el => { backgroundItem = el }}
+              style={{ height: 700, width: 1100, opacity: 1 }}
+              src={Background2} />
 
           </Paper>
         </Grid>
@@ -47,47 +71,7 @@ export default function Home() {
 
 
 
-      <Grid container spacing={3}>
-        <Grid item xs={12}>
-          <Paper elevation={0} className={mui.paper}>
-            <Grid container spacing={2}>
 
-              <Grid item xs={4}>
-                <Paper className={mui.paper}>
-                  <h4 className="text-light"> Greysi Financial Consulting LLC</h4>
-                </Paper>
-              </Grid>
-
-              <Grid item xs={2}>
-                <Paper className={mui.paper}>
-                  <h4 className="text-light">
-                    <a href="./" >Home</a>
-                  </h4>
-                </Paper>
-              </Grid>
-
-              <Grid item xs={2}>
-                <Paper className={mui.paper}>
-                  <h3 className="text-light"> Test</h3>
-                </Paper>
-              </Grid>
-
-              <Grid item xs={2}>
-                <Paper className={mui.paper}>
-                  <h3 className="text-light"> Test</h3>
-                </Paper>
-              </Grid>
-
-              <Grid item xs={2}>
-                <Paper className={mui.paper}>
-                  <h3 className="text-light"> Test</h3>
-                </Paper>
-              </Grid>
-
-            </Grid>
-          </Paper>
-        </Grid>
-      </Grid>
 
       {/* This is an instance of Building a Grid System for a traditional style website */}
       {/*Use the Commented Grid for the Content to be used. */}
