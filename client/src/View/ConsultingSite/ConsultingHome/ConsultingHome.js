@@ -10,6 +10,8 @@ import Card from '@material-ui/core/Card';
 import CardActions from '@material-ui/core/CardActions';
 import CardContent from '@material-ui/core/CardContent';
 
+import ConsultingNavbar from '../ConsultingNavbar/ConsultingNavbar';
+
 
 
 const useStyles = makeStyles((theme) => ({
@@ -31,6 +33,20 @@ export default function Home() {
   const mui = useStyles();
   return (
     <div className="consulting" >
+      {/*Navigation Section of Page */}
+      <Grid container spacing={3}>
+        <Grid item xs={12}>
+          <Paper className={mui.paper}>
+            <ConsultingNavbar />
+
+          </Paper>
+        </Grid>
+      </Grid>
+
+
+
+
+
       <Grid container spacing={3}>
         <Grid item xs={12}>
           <Paper elevation={0} className={mui.paper}>
