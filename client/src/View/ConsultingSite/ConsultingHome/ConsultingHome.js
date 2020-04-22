@@ -1,7 +1,7 @@
 import React, { useRef, useEffect } from 'react';
 import './ConsultingHome.css';
 
-
+// -=-=-=-=-=-=-=-=
 import { makeStyles } from '@material-ui/core/styles';
 import Paper from '@material-ui/core/Paper';
 import Grid from '@material-ui/core/Grid';
@@ -38,6 +38,7 @@ export default function Home() {
   const mui = useStyles();
 
   let backgroundItem = useRef(null);
+  let paperItem = useRef(null);
 
   useEffect(() => {
     console.log(backgroundItem);
@@ -50,6 +51,20 @@ export default function Home() {
 
     )
   }, [])
+
+  useEffect(() => {
+    console.log(paperItem);
+    TweenMax.from(
+      paperItem, 8, {
+      opacity: 0,
+      x: -200,
+      y: -20,
+      ease: Power3.easeOut
+    }
+
+    )
+  }, [])
+
 
 
   return (
@@ -75,9 +90,10 @@ export default function Home() {
 
       {/* This is an instance of Building a Grid System for a traditional style website */}
       {/*Use the Commented Grid for the Content to be used. */}
+
       <Grid container spacing={3}>
         <Grid item xs={12}>
-          <Paper elevation={0} className={mui.paper}>
+          <Paper ref={el => { paperItem = el }} elevation={0} className={mui.paper}>
             <Grid container spacing={3}>
 
               <Grid item xs={2}>
@@ -107,6 +123,7 @@ export default function Home() {
 
       {/* This is an instance of Building a Grid System for a traditional style website */}
       {/*Use the Commented Grid for the Content to be used. */}
+
       <Grid container spacing={3}>
         <Grid item xs={12}>
           <Paper elevation={0} className={mui.paper}>
@@ -233,9 +250,136 @@ export default function Home() {
         </Grid>
       </Grid>
 
+      {/*-+-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=*/}
+      {/*Note-4/21/20- Working with Material-UI again*/}
+      {/*->-> Building a 4-box-even */}
+      {/*-+-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=*/}
+
+      <Grid container spacing={3}>
+        <Grid item xs={12}>
+          <Paper className={mui.paper}>
+            <Grid container spacing={3}>
+
+              <Grid item xs={3}>
+                <Paper elevation={0} className={mui.paper}>
+                  <Card>
+                    <CardContent>
+                      <Typography color="textPrimary">
+                        Hello Test
+                       </Typography>
+                    </CardContent>
+                  </Card>
+                </Paper>
+              </Grid>
+
+              <Grid item xs={3}>
+                <Paper elevation={0} className={mui.paper}>
+                  <Card>
+                    <CardContent>
+                      <Typography color="textPrimary">
+                        Hello Test
+                       </Typography>
+                    </CardContent>
+                  </Card>
+                </Paper>
+              </Grid>
+
+
+              <Grid item xs={3}>
+                <Paper elevation={0} className={mui.paper}>
+                  <Card>
+                    <CardContent>
+                      <Typography color="textPrimary">
+                        Hello Test
+                       </Typography>
+                    </CardContent>
+                  </Card>
+                </Paper>
+              </Grid>
+
+
+              <Grid item xs={3}>
+                <Paper elevation={0} className={mui.paper}>
+                  <Card>
+                    <CardContent>
+                      <Typography color="textPrimary">
+                        Hello Test
+                       </Typography>
+                    </CardContent>
+                  </Card>
+                </Paper>
+              </Grid>
+
+
+            </Grid>
+          </Paper>
+        </Grid>
+      </Grid>
+
+      {/*-+-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=*/}
+      {/*Note-4/21/20- Working with Material-UI again*/}
+      {/*->-> Building a 4-box-even */}
+      {/*-+-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=*/}
+
+      <Grid container spacing={3}>
+        <Grid items xs={12}>
+          <Paper className={mui.paper}>
+            <Grid container spacing={3}>
+
+              <Grid item xs={2}>
+                <Paper elevation={0} className={mui.paper}>
+                  <Card>
+                    <CardContent>
+                      <Typography color="textSecondary">
+                        React
+                      </Typography>
+                    </CardContent>
+                  </Card>
+                </Paper>
+              </Grid>
+
+
+              <Grid item xs={8}>
+                <Paper elevation={0} className={mui.paper}>
+                  <Card>
+                    <CardContent>
+                      <Typography color="textSecondary">
+                        React
+                      </Typography>
+                    </CardContent>
+                  </Card>
+                </Paper>
+              </Grid>
+
+
+              <Grid item xs={2}>
+                <Paper elevation={0} className={mui.paper}>
+                  <Card>
+                    <CardContent>
+                      <Typography color="textSecondary">
+                        React
+                      </Typography>
+                    </CardContent>
+                  </Card>
+                </Paper>
+              </Grid>
 
 
 
+
+
+
+
+
+
+            </Grid>
+          </Paper>
+        </Grid>
+      </Grid>
+
+
+
+      {/*--Final Div--*/}
     </div >
 
   );
