@@ -318,7 +318,7 @@ export default function Home() {
 
       {/*-+-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=*/}
       {/*Note-4/21/20- Working with Material-UI again*/}
-      {/*->-> Building a 4-box-even */}
+      {/*->-> Building a 3-box-center-column */}
       {/*-+-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=*/}
 
       <Grid container spacing={3}>
@@ -363,13 +363,6 @@ export default function Home() {
                   </Card>
                 </Paper>
               </Grid>
-
-
-
-
-
-
-
 
 
             </Grid>

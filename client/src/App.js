@@ -42,9 +42,7 @@ function App() {
           <Route exact path="/Register" component={Register} />
           <Route exact path="/Login" component={Login} />
           <Route exact path="/Drawer1" component={Drawer1} />
-
           <Route exact path="/Dashboard" component={Dashboard} />
-
           <Route exact path="/ConsultingHome" component={ConsultingHome} />
           <Route exact path="/ConsultingPricing" component={ConsultingPricing} />
           <Route exact path="/ConsultingServices" component={ConsultingServices} />
