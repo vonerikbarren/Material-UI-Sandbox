@@ -55,3 +55,25 @@ function App() {
 }
 
 export default App;
+
+
+// Follow these instructions for the new React App to hold the information in on the MasterJavascript React File.
+
+// Step: 1 - Make sure all dependencies are downloaded.
+// -- MaterialUI, D3, Three.js, p5, ReactRouter, etc.
+
+// Step: 2 - Make sure to create the file system as follows:
+// [ src ]
+// - Components
+// - Assets
+// --> Videos
+// --> Images
+// --> SVGs
+// -- 
+// - Components
+// - Pages
+// - Notes
+// - Libraries
+// - Data
+// - Logic
+// - 

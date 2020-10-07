@@ -9,7 +9,7 @@ import D33App from '../../D3/Scatterplot2/D33App';
 
 import Responsive3 from '../../../Assets/Responsive-3.gif';
 import teamwork from '../../../Assets/teamwork.gif';
-import purpleGif from '../../../Assets/purple-visual-1.gif';
+// import purpleGif from '../../../Assets/purple-visual-1.gif';
 import tableSVG from '../../../Assets/teamwork.svg';
 
 const useStyles = makeStyles((theme) => ({
@@ -33,11 +33,11 @@ export default function CenteredGrid() {
     <div >
       <Grid container spacing={3}>
 
-      <Grid item xs={12}>
+        <Grid item xs={12}>
           <Paper color='blue' className={classes.paper}> Hello React
             <div style={{ backgroundColor: "DarkBlue" }} className='jumbotron  text-center text-white'>
               <h1> Using Things Correctly</h1>
-              <img src={purpleGif} alt='teamwork' />
+              {/* <img src={purpleGif} alt='teamwork' /> */}
 
 
             </div>
@@ -63,7 +63,7 @@ export default function CenteredGrid() {
           <Paper color='blue' className={classes.paper}> Hello React
             <div style={{ backgroundColor: "DarkBlue" }} className='jumbotron  text-center text-white'>
               <h1> Using Things Correctly</h1>
-              <img src={purpleGif} alt='teamwork' />
+              {/* <img src={purpleGif} alt='teamwork' /> */}
 
 
             </div>
